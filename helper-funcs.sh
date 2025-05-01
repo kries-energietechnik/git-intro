@@ -4,7 +4,7 @@
 function run()
 {
   local cmd="$*"
-  echo -n "> $cmd   [Yn]"
+  echo -n "> $cmd"  #   [Yn]"
   read -n 1 reply; 
   if [ "$reply" != "" ]; then echo ' -SKIPPING-'; fi
   if [ "$reply" = "${reply#[Nn]}" ]; then
